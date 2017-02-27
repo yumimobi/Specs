@@ -1,0 +1,2 @@
+# Specs
+Yumimobi CocoaPods Specs
