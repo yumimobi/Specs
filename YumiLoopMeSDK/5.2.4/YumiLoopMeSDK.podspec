@@ -20,12 +20,14 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "7.0"
 
-  s.source = { :http => "http://adsdk.yumimobi.com/iOS/LoopMe_SDK_v#{s.version}.zip" }
+  s.source = {:http => "http://adsdk.yumimobi.com/iOS/LoopMe_SDK_v#{s.version}.zip" }
 
   src_root = "LoopMe_SDK_v#{s.version}/lib"
   s.source_files = "#{src_root}/LoopMeSDK/*"
   s.public_header_files = "#{src_root}/LoopMeSDK/*.{h}"
   s.ios.vendored_libraries = "#{src_root}/libLoopMeSDK.a"
-  s.frameworks = "Foundation","UIKit","CoreGraphics","PassKit", "AdSupport", "CoreLocation", "StoreKit", "SystemConfiguration"
-  s.libraries = "sqlite3"
+  s.frameworks = 'AVFoundation', 'Accelerate', 'AdSupport', 'AudioToolbox', 'CFNetwork', 'CoreBluetooth', 'CoreData', 'CoreGraphics', 'CoreImage', 'CoreLocation', 'CoreMedia', 'CoreMotion', 'CoreTelephony', 'CoreVideo', 'EventKit', 'EventKitUI', 'Foundation', 'GLKit', 'MediaPlayer', 'MessageUI', 'MobileCoreServices', 'OpenGLES', 'QuartzCore', 'SafariServices', 'Security', 'Social', 'StoreKit',    'SystemConfiguration', 'UIKit', 'iAd'
+  s.weak_frameworks = 'WebKit'
+  s.libraries = 'c++', 'sqlite3', 'xml2', 'z'
+  s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
 end
