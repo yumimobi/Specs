@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "7.0"
 
-  s.source = { :http => "http://ad-sdk.oss-cn-beijing.aliyuncs.com/iOS/Tapjoy_SDK_v#{s.version}.zip" }
+  s.source = { :http => "http://adsdk.yumimobi.com/iOS/Tapjoy_SDK_v#{s.version}.zip" }
 
   src_root = "Tapjoy_SDK_v#{s.version}/lib/Tapjoy.embeddedframework"
   s.vendored_frameworks = "#{src_root}/Tapjoy.framework"
