@@ -20,13 +20,12 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "7.0"
 
-  s.source = { :http => "http://adsdk.yumimobi.com/iOS/Domob_SDK_v#{s.version}.zip" }
+  s.source = { :http => "http://adsdk.yumimobi.com/iOS/ThirdPartySDK/Domob-#{s.version}.tar.bz2" }
 
-  src_root = "Domob_SDK_v#{s.version}/lib"
-  s.source_files = "#{src_root}/Headers/*"
-  s.resource = "#{src_root}/IndependentVideoBundle.bundle"
-  s.public_header_files = "#{src_root}/Headers/*.{h}"
-  s.ios.vendored_libraries = "#{src_root}/libIndependentVideoSDK.a"
+  s.source_files = "Headers/*"
+  s.resource = "IndependentVideoBundle.bundle"
+  s.public_header_files = "Headers/*.{h}"
+  s.ios.vendored_libraries = "libIndependentVideoSDK.a"
   s.frameworks = "Foundation","UIKit","CoreGraphics","PassKit", "AdSupport", "CoreLocation", "StoreKit", "SystemConfiguration"
   s.libraries = "sqlite3"
 end
