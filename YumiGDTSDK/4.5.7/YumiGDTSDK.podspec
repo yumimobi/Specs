@@ -21,7 +21,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "7.0"
   s.source = { :http => "http://adsdk.yumimobi.com/iOS/ThirdPartySDK/GDTMob_SDK_v#{s.version}.tar.bz2" }
 
-  src_root = "GDTMob_SDK_v#{s.version}/lib"
   s.source_files = "**/*.h"
   s.vendored_libraries = "**/libGDTMobSDK.a"
   s.public_header_files = "**/*.h"
