@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "YumiInmobiSDK"
-  s.version      = "6.2.1"
+  s.version      = "6.0.0"
   s.summary      = "YumiInmobiSDK."
   s.description  = "YumiInmobiSDK is the Inmobi SDK cocoapods created by Yumimobi"
   s.homepage     = "http://www.yumimobi.com/"
