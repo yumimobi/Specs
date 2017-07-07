@@ -3,10 +3,10 @@ Pod::Spec.new do |s|
   version = "6.6.3"
   s.frameworks = 'CoreGraphics', 'StoreKit', 'Foundation', 'UIKit'
 
-  s.name         = "Yumi#{name}SDK"
+  s.name         = "Yumi#{name}"
   s.version      = version
-  s.summary      = "Yumi#{name}SDK."
-  s.description  = "Yumi#{name}SDK is the #{name} SDK cocoapods created by Yumimobi"
+  s.summary      = "Yumi#{name}."
+  s.description  = "Yumi#{name} is the #{name} SDK cocoapods created by Yumimobi"
   s.homepage     = "http://www.yumimobi.com/"
   s.license = "MIT"
   s.author = { "Yumimobi sdk team" => "ad-client@zplay.cn" }

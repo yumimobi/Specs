@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "YumiAdmobSDK"
-  s.version      = "7.20.0"
+  s.version      = "7.18.0"
   s.summary      = "YumiAdmobSDK."
   s.description  = "YumiAdmobSDK is the Admob SDK cocoapods created by Yumimobi"
   s.homepage     = "http://www.yumimobi.com/"
@@ -17,8 +17,9 @@ Pod::Spec.new do |s|
   s.author = { "Yumimobi sdk team" => "ad-client@zplay.cn" }
   s.ios.deployment_target = "7.0"
   s.source = { :http => "http://adsdk.yumimobi.com/iOS/ThirdPartySDK/AdMob-#{s.version}.tar.bz2" }
-  s.frameworks = 'AudioToolbox', 'AVFoundation', 'CoreGraphics', 'CoreTelephony', 'MessageUI',  'StoreKit', 'SystemConfiguration','EventKit','AdSupport','EventKitUI','CoreMotion', 'CoreMedia', 'GLKit','MediaPlayer','MobileCoreServices'
-  s.requires_arc = false
+  s.frameworks = 'AudioToolbox', 'AVFoundation', 'CoreGraphics', 'CoreMedia', 'CoreMotion', 'CoreTelephony', 'CoreVideo', 'GLKit', 'MediaPlayer', 'MessageUI', 'MobileCoreServices', 'OpenGLES', 'StoreKit', 'SystemConfiguration'
+  s.weak_frameworks = 'AdSupport','JavaScriptCore','SafariServices','WebKit'
+  s.requires_arc = true
   s.vendored_frameworks = "GoogleMobileAds.framework"
 
 end

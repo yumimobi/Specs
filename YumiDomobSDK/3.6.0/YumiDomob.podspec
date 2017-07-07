@@ -4,10 +4,10 @@ Pod::Spec.new do |s|
   s.frameworks = "Foundation","UIKit","CoreGraphics","PassKit", "AdSupport", "CoreLocation", "StoreKit", "SystemConfiguration"
   s.libraries = "sqlite3"
 
-  s.name         = "Yumi#{name}SDK"
+  s.name         = "Yumi#{name}"
   s.version      = version
-  s.summary      = "Yumi#{name}SDK."
-  s.description  = "Yumi#{name}SDK is the #{name} SDK cocoapods created by Yumimobi"
+  s.summary      = "Yumi#{name}."
+  s.description  = "Yumi#{name} is the #{name} SDK cocoapods created by Yumimobi"
   s.homepage     = "http://www.yumimobi.com/"
   s.license = "MIT"
   s.author = { "Yumimobi sdk team" => "ad-client@zplay.cn" }
@@ -17,5 +17,5 @@ Pod::Spec.new do |s|
   s.source_files = "Headers/*"
   s.resource = "Resource.bundle"
   s.public_header_files = "Headers/*.h"
-  s.ios.vendored_libraries = "lib.a"
+  s.ios.vendored_libraries = "libIndependentVideoSDK.a"
 end
