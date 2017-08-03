@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "YumiMobvistaSDK"
+  s.name         = "YumiMobvista"
   s.version      = "2.5.0"
   s.summary      = "YumiMobvistaSDK."
   s.description  = "YumiMobvistaSDK is the Mobvista SDK cocoapods created by Yumimobi"
