@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.license = "MIT"
   s.author = { "Yumimobi sdk team" => "ad-client@zplay.cn" }
   s.ios.deployment_target = "7.0"
-  s.source = { :http => "http://adsdk.yumimobi.com/iOS/ThirdPartySDK/Centrixlink/Centrixlink_SDK_v#{s.version}.tar.bz2" }
+  s.source = { :http => "http://adsdk.yumimobi.com/iOS/ThirdPartySDK/Centrixlink/Centrixlink_#{s.version}.tar.bz2" }
   s.frameworks = 'AdSupport', 'AudioToolbox', 'AVFoundation', 'CFNetwork', 'Foundation', 'MediaPlayer', 'StoreKit', 'SystemConfiguration', 'UIKit'
   s.libraries = 'z', 'stdc++', 'sqlite3'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
