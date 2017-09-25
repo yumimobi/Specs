@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.authors = {"zplay sdk team"=>"ad-client@zplay.cn"}
   s.homepage = "http://yumimobi.com/"
   s.description = "YumiMediationDebugCenter-iOS debug"
-  s.source = { :http => 'http://adsdk.yumimobi.com/iOS/YumiMediationDebugCenter-iOS/3.2.0_.tar.bz2' }
+  s.source = { :http => 'http://adsdk.yumimobi.com/iOS/YumiMediationDebugCenter-iOS/3.2.0_66.tar.bz2' }
 
   s.ios.deployment_target    = '8.0'
   s.ios.vendored_framework = 'YumiMediationDebugCenter-iOS.framework'
