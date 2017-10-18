@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.frameworks = ["CoreLocation", "Foundation", "AVFoundation", "UIKit", "JavaScriptCore", "SystemConfiguration", "CoreGraphics", "Security", "MobileCoreServices", "CoreMedia", "CoreTelephony", "AdSupport", "SafariServices", "StoreKit"]
   s.weak_frameworks = "WebKit"
   s.xcconfig = {"OTHER_LDFLAGS"=>"-ObjC", "GCC_PREPROCESSOR_DEFINITIONS"=>"$(inherited) yumiError=1"}
-  s.source = { :http => 'http://adsdk.yumimobi.com/iOS/YumiMediationSDK/3.2.0_.tar.bz2' }
+  s.source = { :http => 'http://adsdk.yumimobi.com/iOS/YumiMediationSDK/3.2.0_973.tar.bz2' }
 
   s.ios.deployment_target    = '8.0'
   s.ios.vendored_framework = 'YumiMediationSDK.framework'
