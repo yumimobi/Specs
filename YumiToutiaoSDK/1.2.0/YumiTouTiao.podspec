@@ -13,6 +13,5 @@ Pod::Spec.new do |s|
   s.source = { :http => "http://adsdk.yumimobi.com/iOS/ThirdPartySDK/#{name}/#{name}SDK-#{version}.tar.bz2" }
   s.vendored_frameworks = "WMAdSDK.framework"
   s.resource = "WMAdSDK.bundle"
-  s.frameworks = "AVFoundation", "AdSupport", "CoreLocation", "CoreMedia", "CoreMotion", "CoreTelephony", "MessageUI", "SafariServices", "StoreKit", "SystemConfiguration"
   s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
 end
