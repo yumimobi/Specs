@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   name = "Baidu"
-  version = "4.5"
+  version = "4.5.0.1"
 
   s.name         = "Yumi#{name}"
   s.version      = version
