@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   end
   s.subspec 'Baidu' do |sp|
     sp.ios.vendored_framework = 'YumiMediationBaidu/YumiMediationBaidu.framework'
-    sp.dependency 'YumiBaidu', '4.5'
+    sp.dependency 'YumiBaidu', '4.5.0.1'
   end
   s.subspec 'Chartboost' do |sp|
     sp.ios.vendored_framework = 'YumiMediationChartboost/YumiMediationChartboost.framework'
