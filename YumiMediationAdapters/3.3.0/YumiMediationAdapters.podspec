@@ -73,7 +73,7 @@ Pod::Spec.new do |s|
   end
   s.subspec 'PlayableAds' do |sp|
     sp.ios.vendored_framework = 'YumiMediationPlayableAds/YumiMediationPlayableAds.framework'
-    sp.dependency 'PlayableAds', '1.5.4'
+    sp.dependency 'PlayableAds', '1.5.6'
   end
   s.subspec 'OneWay' do |sp|
     sp.ios.vendored_framework = 'YumiMediationOneWay/YumiMediationOneWay.framework'
