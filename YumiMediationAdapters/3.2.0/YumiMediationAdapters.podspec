@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = 'http://developers.yumimobi.com/IosSdk/index'
   s.license = 'Custom'
   s.authors = {"zplay sdk team"=>"ad-client@zplay.cn"}
-  s.source = {:http=>"http://adsdk.yumimobi.com/iOS/YumiMediationAdapters/3.2.0_445.tar.bz2"}
+  s.source = {:http=>"http://adsdk.yumimobi.com/iOS/YumiMediationAdapters/3.2.0_.tar.bz2"}
   s.platforms = {"ios"=>"8.0"}
   s.dependency 'YumiMediationSDK', '~> 3.2.0'
   s.subspec 'AdColony' do |sp|
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   end
   s.subspec 'Baidu' do |sp|
     sp.ios.vendored_framework = 'YumiMediationBaidu/YumiMediationBaidu.framework'
-    sp.dependency 'YumiBaidu', '4.5'
+    sp.dependency 'YumiBaidu', '4.5.0.1'
   end
   s.subspec 'Chartboost' do |sp|
     sp.ios.vendored_framework = 'YumiMediationChartboost/YumiMediationChartboost.framework'
@@ -73,6 +73,6 @@ Pod::Spec.new do |s|
   end
   s.subspec 'PlayableAds' do |sp|
     sp.ios.vendored_framework = 'YumiMediationPlayableAds/YumiMediationPlayableAds.framework'
-    sp.dependency 'PlayableAds', '1.4.1'
+    sp.dependency 'PlayableAds', '1.5.7'
   end
 end
