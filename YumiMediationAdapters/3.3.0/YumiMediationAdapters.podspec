@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = 'http://developers.yumimobi.com/IosSdk/index'
   s.license = 'Custom'
   s.authors = {"zplay sdk team"=>"ad-client@zplay.cn"}
-  s.source = {:http=>"http://adsdk.yumimobi.com/iOS/YumiMediationAdapters/3.3.0_.tar.bz2"}
+  s.source = {:http=>"http://adsdk.yumimobi.com/iOS/YumiMediationAdapters/3.3.0_496.tar.bz2"}
   s.platforms = {"ios"=>"8.0"}
   s.dependency 'YumiMediationSDK', '~> 3.3.0'
   s.subspec 'AdColony' do |sp|
@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
   end
   s.subspec 'Facebook' do |sp|
     sp.ios.vendored_framework = 'YumiMediationFacebook/YumiMediationFacebook.framework'
-    sp.dependency 'YumiFacebook', '4.23.0'
+    sp.dependency 'YumiFacebook', '4.26.1'
     sp.resource = 'YumiMediationFacebook/Resources/YumiMediationFacebook.bundle'
   end
   s.subspec 'GDT' do |sp|
@@ -71,10 +71,6 @@ Pod::Spec.new do |s|
     sp.ios.vendored_framework = 'YumiMediationCentrixlink/YumiMediationCentrixlink.framework'
     sp.dependency 'YumiCentrixlink', '2.4.1'
   end
-  s.subspec 'PlayableAds' do |sp|
-    sp.ios.vendored_framework = 'YumiMediationPlayableAds/YumiMediationPlayableAds.framework'
-    sp.dependency 'PlayableAds', '1.5.6'
-  end
   s.subspec 'OneWay' do |sp|
     sp.ios.vendored_framework = 'YumiMediationOneWay/YumiMediationOneWay.framework'
     sp.dependency 'YumiOneWay', '1.3.0'
@@ -82,5 +78,9 @@ Pod::Spec.new do |s|
   s.subspec 'TouTiao' do |sp|
     sp.ios.vendored_framework = 'YumiMediationTouTiao/YumiMediationTouTiao.framework'
     sp.dependency 'YumiTouTiao', '1.2.0'
+  end
+  s.subspec 'PlayableAds' do |sp|
+    sp.ios.vendored_framework = 'YumiMediationPlayableAds/YumiMediationPlayableAds.framework'
+    sp.dependency 'PlayableAds', '1.5.7'
   end
 end
