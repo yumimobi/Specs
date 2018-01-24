@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = 'http://developers.yumimobi.com/IosSdk/index'
   s.license = 'Custom'
   s.authors = {"zplay sdk team"=>"ad-client@zplay.cn"}
-  s.source = {:http=>"http://adsdk.yumimobi.com/iOS/YumiMediationAdapters/3.3.2_542.tar.bz2"}
+  s.source = {:http=>"http://adsdk.yumimobi.com/iOS/YumiMediationAdapters/3.3.2_546.tar.bz2"}
   s.platforms = {"ios"=>"8.0"}
   s.dependency 'YumiMediationSDK', '~> 3.3.0'
   s.subspec 'AdColony' do |sp|
@@ -81,6 +81,6 @@ Pod::Spec.new do |s|
   end
   s.subspec 'PlayableAds' do |sp|
     sp.ios.vendored_framework = 'YumiMediationPlayableAds/YumiMediationPlayableAds.framework'
-    sp.dependency 'PlayableAds', '2.0.0'
+    sp.dependency 'PlayableAds', '2.0.1'
   end
 end
