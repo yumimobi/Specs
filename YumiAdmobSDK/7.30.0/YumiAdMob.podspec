@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license = "MIT"
   s.author = { "Yumimobi sdk team" => "ad-client@zplay.cn" }
   s.ios.deployment_target = "7.0"
-  s.source = { :http => "http://adsdk.yumimobi.com/iOS/ThirdPartySDK/#{name}/#{name}-#{version}.tar.bz2" }
+  s.source = { :http => "http://adsdk.yumimobi.com/iOS/ThirdPartySDK/#{name}/#{name}-#{version}-10000.tar.bz2" }
   s.frameworks = 'AudioToolbox', 'AVFoundation', 'CoreGraphics', 'CoreTelephony', 'MessageUI',  'StoreKit', 'SystemConfiguration','EventKit','AdSupport','EventKitUI','CoreMotion', 'CoreMedia', 'GLKit','MediaPlayer','MobileCoreServices'
   s.requires_arc = false
   s.vendored_frameworks = "GoogleMobileAds.framework"
