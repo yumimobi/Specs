@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "8.0"
   s.source = { :http => "https://adsdk.yumimobi.com/iOS/ThirdPartySDK/#{name}/#{name}-#{version}.zip" }
  
-   s.source_files = "**/*.h"
+  s.source_files = "**/*.h"
   s.vendored_libraries = "**/libIMD.a"
   s.public_header_files = "**/*.h"
   s.resource = "**/IASDKResources.bundle", "**/TapjoyResources.bundle"
