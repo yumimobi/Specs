@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.libraries = "z",'xml2','c++','sqlite3.0'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC'}
 
-  s.dependency 'PlayableAds', '~>2.3.0'
+  s.dependency 'YumiMediationSDK', '~>3.5.0'
   s.dependency 'YumiAdColony', '~>3.3.6'
   s.dependency 'YumiAppLovin', '~>5.0.2'
   s.dependency 'YumiChartboost', '~>7.3.0'
