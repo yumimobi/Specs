@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = 'http://developers.yumimobi.com/IosSdk/index'
   s.license = 'Custom'
   s.authors = {"zplay sdk team"=>"ad-client@zplay.cn"}
-  s.source = {:http=>"https://adsdk.yumimobi.com/iOS/YumiMediationAdapters/3.5.0_927.tar.bz2"}
+  s.source = {:http=>"https://adsdk.yumimobi.com/iOS/YumiMediationAdapters/3.5.0_935.tar.bz2"}
   s.platforms = {"ios"=>"8.0"}
   s.dependency 'YumiMediationSDK', '~> 3.5.0'
   s.subspec 'AdColony' do |sp|
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   end
   s.subspec 'Baidu' do |sp|
     sp.ios.vendored_framework = 'YumiMediationBaidu/YumiMediationBaidu.framework'
-    sp.dependency 'YumiBaidu', '4.5.0.5'
+    sp.dependency 'YumiBaidu', '4.6.0'
   end
   s.subspec 'Chartboost' do |sp|
     sp.ios.vendored_framework = 'YumiMediationChartboost/YumiMediationChartboost.framework'
@@ -34,6 +34,10 @@ Pod::Spec.new do |s|
     sp.ios.vendored_framework = 'YumiMediationFacebook/YumiMediationFacebook.framework'
     sp.dependency 'YumiFacebook', '5.1.0'
     sp.resource = 'YumiMediationFacebook/Resources/YumiMediationFacebook.bundle'
+  end
+  s.subspec 'Domob' do |sp|
+    sp.ios.vendored_framework = 'YumiMediationDomob/YumiMediationDomob.framework'
+    sp.dependency 'YumiDomob', '3.8.0'
   end
   s.subspec 'GDT' do |sp|
     sp.ios.vendored_framework = 'YumiMediationGDT/YumiMediationGDT.framework'
@@ -69,6 +73,6 @@ Pod::Spec.new do |s|
   end
   s.subspec 'IQzone' do |sp|
     sp.ios.vendored_framework = 'YumiMediationIQzone/YumiMediationIQzone.framework'
-    sp.dependency 'YumiIQzone', '3.0.2131'
+    sp.dependency 'YumiIQzone', '3.0.2132'
   end
 end
