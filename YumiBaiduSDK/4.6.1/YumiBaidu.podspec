@@ -13,6 +13,6 @@ Pod::Spec.new do |s|
   s.source = { :http => "https://adsdk.yumimobi.com/iOS/ThirdPartySDK/#{name}/#{name}-#{version}.zip"}
   s.vendored_frameworks = "lib/BaiduMobAdSDK.framework"
   s.resource = "lib/baidumobadsdk.bundle"
-  s.frameworks = "AVFoundation", "AdSupport", "CoreLocation", "CoreMedia", "CoreMotion", "CoreTelephony", "MessageUI", "SafariServices", "StoreKit", "SystemConfiguration","WebKit"
+  s.frameworks = "AVFoundation", "AdSupport", "CoreMedia", "CoreMotion", "CoreTelephony", "MessageUI", "SafariServices", "StoreKit", "SystemConfiguration","WebKit"
   s.libraries = "c++"
 end
