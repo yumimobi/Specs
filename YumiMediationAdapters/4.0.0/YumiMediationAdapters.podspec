@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = 'http://developers.yumimobi.com/IosSdk/index'
   s.license = 'Custom'
   s.authors = {"zplay sdk team"=>"ad-client@zplay.cn"}
-  s.source = {:http=>"https://adsdk.yumimobi.com/iOS/YumiMediationAdapters/4.0.0_1135.tar.bz2"}
+  s.source = {:http=>"https://adsdk.yumimobi.com/iOS/YumiMediationAdapters/4.0.0_10005.tar.bz2"}
   s.platforms = {"ios"=>"8.0"}
   s.dependency 'YumiMediationSDK', '~> 4.0.0'
   s.subspec 'AdColony' do |sp|
@@ -73,6 +73,6 @@ Pod::Spec.new do |s|
   end
   s.subspec 'IQzone' do |sp|
     sp.ios.vendored_framework = 'YumiMediationIQzone/YumiMediationIQzone.framework'
-    sp.dependency 'YumiIQzone', '3.0.2134'
+    sp.dependency 'YumiIQzone', '3.0.2141'
   end
 end
