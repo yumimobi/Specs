@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 
   s.vendored_frameworks = "Tapjoy/Tapjoy.framework"
   s.resource = "Tapjoy/Resources/TapjoyResources.bundle"
-  s.frameworks = "Security","CoreData","CFNetwork","CoreGraphics","CoreLocation","CoreMotion","Foundation","MapKit","MediaPlayer","MobileCoreServices","QuartzCore","SystemConfiguration","UIKit","ImageIO","WebKit"
+  s.frameworks = "Security","CoreData","CFNetwork","CoreGraphics","CoreMotion","Foundation","MapKit","MediaPlayer","MobileCoreServices","QuartzCore","SystemConfiguration","UIKit","ImageIO","WebKit"
   s.weak_frameworks = "AdSupport", "CoreTelephony", "StoreKit"
   s.libraries = 'c++', 'sqlite3', 'xml2', 'z'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
