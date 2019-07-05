@@ -1,33 +1,19 @@
-#
-# Be sure to run `pod lib lint YumiDependencySDKs.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
-  name = 'YumiAdSDK'
-  version = '1.0.0'
-  s.name             = name
-  s.version          = '1.0.0'
-  s.summary          = 'Yumi Dependency SDKs.'
-  s.description      = 'A short description of YumiDependencySDKs.'
-  s.homepage         = 'http://yumimobi.com/'
-  s.author           = { 'yumimobi' => 'ad-client@zplay.cn' }
-  s.source = { :http => "https://adsdk.yumimobi.com/iOS/YumiAdSDK/#{name}-#{version}.zip"}
+  s.name = "YumiAdSDK"
+  s.version = "1.0.0"
+  s.summary = "Yumi Mediation SDK."
+  s.license = "Custom"
+  s.authors = {"zplay sdk team"=>"ad-client@zplay.cn"}
+  s.homepage = "http://yumimobi.com/"
+  s.description = "This is the Yumi Mediation SDK. Please proceed to http://developers.yumimobi.com/IosSdk/index for more information."
+  s.frameworks = ["Foundation", "AVFoundation", "UIKit", "JavaScriptCore", "SystemConfiguration", "CoreGraphics", "Security", "MobileCoreServices", "CoreMedia", "CoreTelephony", "AdSupport", "SafariServices", "StoreKit", "AudioToolbox", "CoreMotion", "MessageUI"]
+  s.weak_frameworks = "WebKit"
+  s.libraries = ["sqlite3", "xml2", "c++", "z", "xml2"]
+  s.xcconfig = {"OTHER_LDFLAGS"=>"-ObjC", "GCC_PREPROCESSOR_DEFINITIONS"=>"ZplayDebug=1", "HEADER_SEARCH_PATHS"=>"$(SDKROOT)/usr/include/libxml2"}
+  s.source = { :http => 'https://adsdk.yumimobi.com/iOS/YumiAdSDK/1.0.0_10008.tar.bz2' }
 
-  s.ios.deployment_target = '8.0'
-
-  s.vendored_frameworks = 'YumiAdSDK/YumiAdSDK.framework'
-  s.vendored_libraries = "YumiAdSDK/libMobSDKInner.a","YumiAdSDK/libMobAdSDKYumi.a"
-
-  s.resource = 'YumiAdSDK/Resources/*.bundle'
-
-  s.frameworks = 'UIKit','WebKit', 'SystemConfiguration', 'MobileCoreServices', 'AdSupport', 'CoreTelephony', 'StoreKit', 'Security','CoreMotion','SafariServices','MessageUI','CoreMedia','QuartzCore','AVFoundation'
-  s.xcconfig = { 
-    'OTHER_LDFLAGS' => '-ObjC'
-  }
-  s.libraries = 'c++','z','xml2','sqlite3'
-
+  s.ios.deployment_target    = '8.0'
+  s.ios.vendored_framework = 'YumiAdSDK.framework'
+  s.vendored_libraries = 'libMobAdSDKDependency0.a','libMobAdSDKDependency1.a'
+  s.resource = 'Resources/YumiMediationSDK.bundle','Resources/YumiAdsSDK.bundle','Resources/ZplayMuteListener.bundle','Resources/YumiDependency.bundle'
 end
