@@ -10,10 +10,10 @@ Pod::Spec.new do |s|
   s.weak_frameworks = "WebKit"
   s.libraries = ["sqlite3", "xml2", "c++", "z", "xml2"]
   s.xcconfig = {"OTHER_LDFLAGS"=>"-ObjC", "GCC_PREPROCESSOR_DEFINITIONS"=>"ZplayDebug=1", "HEADER_SEARCH_PATHS"=>"$(SDKROOT)/usr/include/libxml2"}
-  s.source = { :http => 'https://adsdk.yumimobi.com/iOS/YumiAdSDK/1.0.0_10009.tar.bz2' }
+  s.source = { :http => 'https://adsdk.yumimobi.com/iOS/YumiAdSDK/1.0.0_100012.tar.bz2' }
 
   s.ios.deployment_target    = '8.0'
   s.ios.vendored_framework = 'YumiAdSDK.framework'
   s.vendored_libraries = 'libMobAdSDKDependency0.a','libMobAdSDKDependency1.a'
-  s.resource = 'Resources/YumiMediationSDK.bundle','Resources/YumiAdsSDK.bundle','Resources/ZplayMuteListener.bundle','Resources/YumiDependency.bundle'
+  s.resource = 'Resources/YumiMediationSDK.bundle','Resources/YumiAdsSDK.bundle','Resources/ZplayMuteListener.bundle','Resources/baidumobadsdk.bundle','Resources/YumiMediationGDT.bundle'
 end
