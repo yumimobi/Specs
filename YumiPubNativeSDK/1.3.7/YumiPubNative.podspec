@@ -13,6 +13,5 @@ Pod::Spec.new do |s|
   s.source = { :http => "https://adsdk.yumimobi.com/iOS/ThirdPartySDK/#{name}/#{name}-#{version}.tar.bz2" }
   s.frameworks = 'AdSupport','AVFoundation','CoreGraphics','CoreMedia','CoreTelephony','Foundation','MediaPlayer','MessageUI','QuartzCore','SafariServices','StoreKit','SystemConfiguration','UIKit','WebKit'
   s.libraries = 'z',"xml2"
-  # s.weak_frameworks = 'WebKit', 'SafariServices', 'JavaScriptCore', 'AdSupport'
   s.vendored_frameworks = 'HyBid.framework'
 end
