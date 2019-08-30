@@ -19,9 +19,4 @@ Pod::Spec.new do |s|
   s.source_files = '**/*.{h,m}'
   s.exclude_files = '**/*.plist'
   s.public_header_files = '**/*.h'
-  s.vendored_libraries = 'lib1/libSDK1.a'
-  s.resource = 'Resources/*.bundle','lib2/*.bundle'
-  s.source_files = '**/*.{h,m}'
-  s.exclude_files = '**/*.plist'
-  s.public_header_files = '**/*.h'
 end
