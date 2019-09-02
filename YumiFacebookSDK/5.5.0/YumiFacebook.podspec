@@ -15,11 +15,6 @@ Pod::Spec.new do |s|
   s.weak_frameworks = 'AdSupport','CoreMotion','SafariServices','WebKit','VideoToolbox','CoreTelephony','LocalAuthentication','CFNetwork','SystemConfiguration'
   s.libraries = 'c++','xml2','z'
   s.requires_arc = true
-  s.vendored_frameworks = "FBAudienceNetwork.framework"
-  s.preserve_paths = "FBAudienceNetwork.framework"
-  s.dependencies = {
-    "FBSDKCoreKit/Basics": [
-      ">= 5.2.1"
-    ]
-  }
+  s.vendored_frameworks = "FBAudienceNetwork.framework","FBSDKCoreKit.framework"
+  s.preserve_paths = "FBAudienceNetwork.framework","FBSDKCoreKit.framework"
 end
