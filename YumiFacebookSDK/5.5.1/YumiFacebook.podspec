@@ -17,5 +17,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.vendored_frameworks = "FBAudienceNetwork.framework"
   s.preserve_paths = "FBAudienceNetwork.framework"
-  s.dependency 'FBSDKCoreKit', '5.8.0'
+  s.dependency 'FBSDKCoreKit', ">= 5.2.1"
 end
