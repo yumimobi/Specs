@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "8.0"
   s.source = { :http => "https://adsdk.yumimobi.com/iOS/ThirdPartySDK/#{name}/#{name}-#{version}.tar.bz2" }
   s.vendored_frameworks = "AppLovinSDK.framework"
-  s.resources = "AppLovinSDKResources.bundle"
+  s.resource = "AppLovinSDKResources.bundle"
   s.frameworks = 'AdSupport', 'AVFoundation', 'CoreGraphics', 'CoreMedia', 'CoreTelephony', 'StoreKit', 'SystemConfiguration', 'UIKit' ,'WebKit','SafariServices'
   s.libraries = 'z'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
