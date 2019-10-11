@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.homepage     = "http://www.yumimobi.com/"
   s.license = "MIT"
   s.author = { "Yumimobi sdk team" => "ad-client@zplay.cn" }
-  s.ios.deployment_target = "7.0"
+  s.ios.deployment_target = "8.0"
   s.source = { :http => "https://adsdk.yumimobi.com/iOS/ThirdPartySDK/#{name}/#{name}-#{version}.tar.bz2" }
   s.vendored_frameworks = "UnityAds.framework"
 end
