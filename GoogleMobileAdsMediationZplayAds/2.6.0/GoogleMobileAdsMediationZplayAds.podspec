@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.authors = {"zplay sdk team"=>"ad-client@zplay.cn"}
   s.homepage = "https://github.com/yumimobi/PlayableAds-iOS"
   s.description = "ZplayAds SDK provides a better ad format for monetizing."
-  s.source = { :http => 'https://adsdk.yumimobi.com/iOS/GoogleMobileAdsMediationZplayAds/GoogleMobileAdsMediationZplayAds.tar.bz2' }
+  s.source = { :http => 'https://adsdk.yumimobi.com/iOS/GoogleMobileAdsMediationZplayAds/GoogleMobileAdsMediationZplayAds_2019103101.tar.bz2' }
   s.source_files = '**/*.{h,m}'
   s.ios.deployment_target = '8.0'
   s.dependency 'PlayableAds', '~> 2.6.0'
