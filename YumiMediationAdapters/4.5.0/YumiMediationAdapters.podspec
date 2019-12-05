@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://www.yumimobi.com/en/index.html'
   s.license = 'Custom'
   s.authors = {"zplay sdk team"=>"ad-client@zplay.cn"}
-  s.source = {:http=>"https://adsdk.yumimobi.com/iOS/YumiMediationAdapters/4.5.0_2019120302.tar.bz2"}
+  s.source = {:http=>"https://adsdk.yumimobi.com/iOS/YumiMediationAdapters/4.5.0_1656.tar.bz2"}
   s.platforms = {"ios"=>"9.0"}
   s.dependency 'YumiMediationSDK', '~> 4.5.0'
   s.subspec 'ZplayAds' do |sp|
