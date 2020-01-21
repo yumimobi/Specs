@@ -6,9 +6,13 @@ Pod::Spec.new do |s|
   s.homepage = 'https://www.yumimobi.com/en/index.html'
   s.license = 'Custom'
   s.authors = {"zplay sdk team"=>"ad-client@zplay.cn"}
-  s.source = {:http=>"https://adsdk.yumimobi.com/iOS/YumiMediationAdapters/4.5.1_2020012108.tar.bz2"}
+  s.source = {:http=>"https://adsdk.yumimobi.com/iOS/YumiMediationAdapters/4.5.1_2020012110.tar.bz2"}
   s.platforms = {"ios"=>"8.0"}
   s.dependency 'YumiMediationSDK', '~> 4.5.0'
+  s.subspec 'TapjoySDK' do |sp|
+    sp.ios.vendored_framework = 'YumiMediationTapjoySDK/YumiMediationTapjoySDK.framework'
+    sp.dependency 'YumiTapjoySDK', '12.3.4'
+  end
   s.subspec 'PubNative' do |sp|
     sp.ios.vendored_framework = 'YumiMediationPubNative/YumiMediationPubNative.framework'
     sp.dependency 'YumiPubNative', '1.3.7'
