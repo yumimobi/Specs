@@ -6,14 +6,11 @@ Pod::Spec.new do |s|
   s.homepage = 'https://www.yumimobi.com/en/index.html'
   s.license = 'Custom'
   s.authors = {"zplay sdk team"=>"ad-client@zplay.cn"}
-  s.source = {:http=>"https://adsdk.yumimobi.com/iOS/YumiMediationAdapters/4.5.1_2020012103.tar.bz2"}
+  s.source = {:http=>"https://adsdk.yumimobi.com/iOS/YumiMediationAdapters/4.5.1_2020012105.tar.bz2"}
   s.platforms = {"ios"=>"8.0"}
   s.dependency 'YumiMediationSDK', '~> 4.5.0'
-  s.subspec 'BytedanceAds' do |sp|
-    sp.source_files = 'YumiMediationBytedanceAds/**/*.{h,m}'
-    valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
-    sp.xcconfig = {'VALID_ARCHS' =>  valid_archs.join(' '),}
-  s.xcconfig = {"VALID_ARCHS"=>"armv7 armv7s x86_64 arm64"}
-    sp.dependency 'YumiBytedanceAds', '2.7.5.2'
+  s.subspec 'PubNative' do |sp|
+    sp.ios.vendored_framework = 'YumiMediationPubNative/YumiMediationPubNative.framework'
+    sp.dependency 'YumiPubNative', '1.3.7'
   end
 end
