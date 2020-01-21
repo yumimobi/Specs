@@ -9,9 +9,9 @@ Pod::Spec.new do |s|
   s.source = {:http=>"https://adsdk.yumimobi.com/iOS/YumiMediationAdapters/4.5.1_2020012102.tar.bz2"}
   s.platforms = {"ios"=>"8.0"}
   s.dependency 'YumiMediationSDK', '~> 4.5.0'
-  s.xcconfig = {"VALID_ARCHS"=>"armv7 armv7s x86_64 arm64"}
   s.subspec 'BytedanceAds' do |sp|
     sp.source_files = 'YumiMediationBytedanceAds/**/*.{h,m}'
+  s.xcconfig = {"VALID_ARCHS"=>"armv7 armv7s x86_64 arm64"}
     sp.dependency 'YumiBytedanceAds', '2.7.5.2'
   end
 end
