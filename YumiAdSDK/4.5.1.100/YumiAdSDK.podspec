@@ -17,5 +17,4 @@ Pod::Spec.new do |s|
   s.resource = 'Resources/*.bundle','lib2/*.bundle','lib3/Resources/*.bundle'
   s.source_files = '**/*.{h,m}'
   s.public_header_files = '**/*.h'
-  s.dependency 'YumiGDT'
 end
