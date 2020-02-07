@@ -18,5 +18,4 @@ Pod::Spec.new do |s|
   s.resource = 'Resources/*.bundle'
   s.source_files = '**/*.{h,m}'
   s.public_header_files = '**/*.h'
-  s.dependency 'AtmosplayAds'
 end
