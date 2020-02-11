@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'http://yumimobi.com/'
   s.license          = 'Custom'
   s.author           = { 'zplay sdk team' => 'ad-client@zplay.cn' }
-  s.source           = { :http => 'https://ad-sdk.oss-cn-beijing.aliyuncs.com/iOS/YumiAdAdapter/YumiAdSDK__4.5.1.400.tar.bz2'}
+  s.source           = { :http => 'https://adsdk.yumimobi.com/iOS/YumiAdAdapter/YumiAdSDK__4.5.1.400.tar.bz2'}
 
   s.ios.deployment_target = '8.0'
   s.resource_bundles = {
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
     'YumiAdsSDK' => ['YumiSDK-iOS/YumiAdsSDK/Resources/*'],
     'YumiMediationGDT' => ['GDT/resources/*']
   }
-  s.source_files = 'YumiMediationSDK/**/*','YumiSDK-iOS/YumiAdsSDK/YumiAdsSDK/**/*','YumiSDK-iOS/YumiCommon/**/*','YumiAdSDKModules/*','GDT/**/*.{h,m}'
+  s.source_files = 'YumiMediationSDK/**/*','YumiSDK-iOS/YumiAdsSDK/YumiAdsSDK/**/*','YumiSDK-iOS/YumiCommon/**/*','YumiAdSDKModules/*','GDT/**/*.{h,m}','BytedanceAds/**/*.{h,m}'
   s.frameworks = 'Foundation','AVFoundation','UIKit','JavaScriptCore','SystemConfiguration','CoreGraphics','Security','MobileCoreServices','CoreMedia','CoreTelephony','AdSupport','SafariServices','StoreKit','AudioToolbox','CoreMotion','MessageUI'
   s.weak_frameworks = 'WebKit'
   s.libraries = 'sqlite3','xml2','c++','z','xml2'
@@ -25,13 +25,16 @@ Pod::Spec.new do |s|
   #ZplayWarning
   #ZplayInfo
   #ZplayDebug
+  valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
   s.xcconfig = { 
     'OTHER_LDFLAGS' => '-ObjC', 
     'GCC_PREPROCESSOR_DEFINITIONS' => 'ZplayError=1',
-    'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2'
+    'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2',
+    'VALID_ARCHS' =>  valid_archs.join(' '),
   }
   
   s.dependency 'YumiGDT'
+  s.dependency 'YumiBytedanceAds'
   # s.dependency 'YumiBaidu'
   # s.dependency 'AtmosplayAds'
   s.static_framework = true
