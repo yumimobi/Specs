@@ -1,21 +1,21 @@
 Pod::Spec.new do |s|
-  s.name = "YumiAdSDK"
-  s.version = "4.5.1.100"
-  s.summary = "Yumi SDK."
-  s.license = "Custom"
-  s.authors = {"zplay sdk team"=>"ad-client@zplay.cn"}
-  s.homepage = "http://yumimobi.com/"
-  s.description = "This is the Yumi SDK. Please proceed to http://developers.yumimobi.com/IosSdk/index for more information."
-  s.frameworks = ["Foundation", "AVFoundation", "UIKit", "JavaScriptCore", "SystemConfiguration", "CoreGraphics", "Security", "MobileCoreServices", "CoreMedia", "CoreTelephony", "AdSupport", "SafariServices", "StoreKit", "AudioToolbox", "CoreMotion", "MessageUI"]
-  s.weak_frameworks = "WebKit"
-  s.libraries = ["sqlite3", "xml2", "c++", "z", "xml2"]
-  s.xcconfig = {"OTHER_LDFLAGS"=>"-ObjC", "GCC_PREPROCESSOR_DEFINITIONS"=>"ZplayError=1", "HEADER_SEARCH_PATHS"=>"$(SDKROOT)/usr/include/libxml2"}
-  s.source = { :http => 'https://adsdk.yumimobi.com/iOS/YumiAdSDK/4.5.1.100_3232.tar.bz2' }
+  s.name             = 'YumiAdSDK'
+  s.version          = '4.5.1.100'
+  s.summary          = 'Yumi SDK.'
+  s.description      = 'This is the Yumi SDK. Please proceed to http://developers.yumimobi.com/IosSdk/index for more information.'
+  s.homepage         = 'http://yumimobi.com/'
+  s.license          = 'Custom'
+  s.author           = { 'Yumi sdk team' => 'ad-client@yumimobi.com' }
+  s.source           = { :http => 'https://adsdk.yumimobi.com/iOS/YumiAdSDK/YumiAdSDK_4.5.1.000_07.tar.bz2'}
 
-  s.ios.deployment_target    = '8.0'
-  s.ios.vendored_framework = 'YumiAdSDK.framework'
-  s.vendored_libraries = 'lib1/libSDK1.a'
-  s.resource = 'Resources/*.bundle'
+  s.ios.deployment_target = '8.0'
   s.source_files = '**/*.{h,m}'
-  s.public_header_files = '**/*.h'
+  
+  # s.ios.vendored_framework = 'Baidu/BaiduMobAdSDK.framework'
+  s.vendored_libraries = 'lib1/libSDK1.a'
+  s.resource = 'GDT/resources/*'
+
+  s.dependency 'YumiMediationSDK', '4.5.1'
+  s.static_framework = true
+
 end
