@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.authors = {"jdy"=>"wzy2010416033@163.com"}
   s.homepage = "https://www.zplay.com"
   s.description = "This is a red packet SDK for PopStar."
-  s.source = { :http => 'https://adsdk.yumimobi.com/iOS/RedPacketSDK/RedPacketSDK_1.0.0.tar.bz2' }
+  s.source = { :http => 'https://adsdk.yumimobi.com/iOS/RedPacketSDK/RedPacketSDK_1.0.0_1.tar.bz2' }
   
   s.resource = "Resources/RPResources.bundle"
   s.vendored_frameworks = "RedPacket.framework"
