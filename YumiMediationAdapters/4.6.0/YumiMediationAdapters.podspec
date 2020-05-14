@@ -9,8 +9,8 @@ Pod::Spec.new do |s|
   s.source = {:http=>"https://adsdk.yumimobi.com/iOS/YumiMediationAdapters/4.6.0_2020051401.tar.bz2"}
   s.platforms = {"ios"=>"9.0"}
   s.dependency 'YumiMediationSDK', '~> 4.6.0'
-  s.subspec 'AtmosplayAds' do |sp|
-    sp.ios.vendored_framework = 'YumiMediationAtmosplayAds/YumiMediationAtmosplayAds.framework'
-    sp.dependency 'AtmosplayAds', '3.1.2'
+  s.subspec 'PubNative' do |sp|
+    sp.ios.vendored_framework = 'YumiMediationPubNative/YumiMediationPubNative.framework'
+    sp.dependency 'YumiPubNative', '1.3.7'
   end
 end
