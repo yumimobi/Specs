@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.frameworks = ["UIKit", "Foundation", "WebKit", "SystemConfiguration", "MobileCoreServices", "AdSupport", "CoreTelephony", "StoreKit", "Security", "AudioToolbox", "CoreMotion", "AVFoundation", "CoreMedia"]
   s.libraries = "xml2"
   s.xcconfig = {"HEADER_SEARCH_PATHS"=>"$(SDKROOT)/usr/include/libxml2", "OTHER_LDFLAGS"=>"-ObjC", "GCC_PREPROCESSOR_DEFINITIONS"=>"$(inherited) AtmosplayDebug=1"}
-  s.source = { :http => 'https://adsdk.yumimobi.com/iOS/AtmosplayAds/3.2.0_2020052501.tar.bz2' }
+  s.source = { :http => 'https://adsdk.yumimobi.com/iOS/AtmosplayAds/3.2.0_2020052701.tar.bz2' }
 
   s.ios.deployment_target    = '8.0'
   s.ios.vendored_framework = 'AtmosplayAds.framework'
