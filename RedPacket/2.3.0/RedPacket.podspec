@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.authors = {"jdy"=>"wzy2010416033@163.com"}
   s.homepage = "https://www.zplay.com"
   s.description = "A long description of RedPacket-iOS. No more description."
-  s.source = { :http => 'https://adsdk.yumimobi.com/iOS/RedPacketSDK/01_RedPacketSDK_2.3.0.tar.bz2'}
+  s.source = { :http => 'https://adsdk.yumimobi.com/iOS/RedPacketSDK/02_RedPacketSDK_2.3.0.tar.bz2'}
 
   s.resource = "Resources/RedPacketResources.bundle"
   s.vendored_frameworks = "RedPacket.framework"
@@ -24,4 +24,7 @@ Pod::Spec.new do |s|
   s.dependency 'FLAnimatedImage', '~> 1.0'
 
   s.static_framework = true
+
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
