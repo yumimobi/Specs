@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.source_files = '**/*.{h,m}'
   s.resource_bundles = {"YumiMediationGDT"=>["**/*.{png,xib}"]}
   s.static_framework = true
-  valid_archs = ['armv7', 'arm64']
+  valid_archs = ['armv7', 'arm64', 'x86_64']
   s.xcconfig = {
     'VALID_ARCHS' =>  valid_archs.join(' '),
   }
