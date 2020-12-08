@@ -13,6 +13,11 @@ Pod::Spec.new do |s|
   s.source_files = '**/*.{h,m}'
   s.resource_bundles = {"YumiMediationGDT"=>["**/*.{png,xib}"]}
   s.static_framework = true
-  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 armv7' }
-  s.user_target_xcconfig = { 'VALID_ARCHS' => 'arm64 armv7' }
+  valid_archs = ['armv7', 'arm64']
+  s.xcconfig = {
+    'VALID_ARCHS' =>  valid_archs.join(' '),
+  }
+  # s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2'}
+  # s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  # s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
