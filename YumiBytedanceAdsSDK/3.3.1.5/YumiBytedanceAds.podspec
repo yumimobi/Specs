@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'BUAdSDK.framework', 'BUFoundation.framework'
   s.resource = 'BUAdSDK.bundle'
   s.frameworks = 'UIKit','MapKit','WebKit','MediaPlayer','CoreLocation','AdSupport','CoreMedia','AVFoundation','CoreTelephony','StoreKit','SystemConfiguration','MobileCoreServices','CoreMotion','Accelerate'
-  valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
+  valid_archs = ['armv7', 'x86_64', 'arm64']
   s.xcconfig = {
     'VALID_ARCHS' =>  valid_archs.join(' '),
   }
