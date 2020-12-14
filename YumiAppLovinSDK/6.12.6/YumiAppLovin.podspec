@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.frameworks = 'AdSupport', 'AVFoundation', 'CoreGraphics', 'CoreMedia', 'CoreTelephony', 'StoreKit', 'SystemConfiguration', 'UIKit' ,'WebKit','SafariServices','Audiotoolbox'
   s.libraries = 'z'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
-  valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
+  valid_archs = ['armv7', 'x86_64', 'arm64']
   s.xcconfig = {
     'VALID_ARCHS' =>  valid_archs.join(' '),
   }
